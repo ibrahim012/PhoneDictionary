@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "waRnVTcuxmaCLoTjN1eW7gG/68wY+5HbGXM9jf8zGXQ=",
+  "Source": "PhoneDictionary.API",
+  "BasePath": "_content/PhoneDictionary.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
