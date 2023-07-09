@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Entity", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.DataAccess", "PhoneDictionary.DataAccess\PhoneDictionary.DataAccess.csproj", "{10ED8270-2C28-4F48-9791-7B98219692C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary. Business", "PhoneDictionary. Business\PhoneDictionary. Business.csproj", "{C14FB944-C7DE-424A-ABFE-F8A4E102ED46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Business", "PhoneDictionary. Business\PhoneDictionary.Business.csproj", "{C14FB944-C7DE-424A-ABFE-F8A4E102ED46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.API", "PhoneDictionary.API\PhoneDictionary.API.csproj", "{EBC59368-1C6A-4A69-898F-7A93650A493A}"
 EndProject

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PhoneDictionary. Business\PhoneDictionary. Business.csproj" />
+    <ProjectReference Include="..\PhoneDictionary. Business\PhoneDictionary.Business.csproj" />
   </ItemGroup>
 
 </Project>

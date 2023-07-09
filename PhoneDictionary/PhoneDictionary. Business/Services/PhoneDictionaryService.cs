@@ -1,5 +1,6 @@
 ﻿using PhoneDictionary.DataAccess.Repository;
 using PhoneDictionary.Entity;
+using PhoneDictionary.Entity.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,19 +19,27 @@ namespace PhoneDictionary._Business.Services
             _phoneDictionaryRepository = new PhoneDictionaryRepository();
         }
 
-        public Person AddContactInfo(ContactInfo contactInfo)
+        public Person AddContactInfo(ContactInfo contactInfo, int personId)
         {
-            throw new NotImplementedException();
+            return _phoneDictionaryRepository.AddContactInfo(contactInfo, personId);
         }
 
-        public Person CreatePerson(Person person)
+        public PersonModel CreatePerson(PersonModel person)
         {
-            throw new NotImplementedException();
+            if (person != null)
+            {
+                return _phoneDictionaryRepository.CreatePerson(person);
+            }
+            throw new Exception("Model boş olamaz");
         }
 
         public void DeletePerson(int personId)
         {
-            throw new NotImplementedException();
+            if (personId>0)
+            {
+                _phoneDictionaryRepository.DeletePerson(personId);
+            }
+            throw new Exception("PersonId 0dan büyük olmalıdır.");
         }
 
         public List<Person> GetAllPerson()
@@ -51,14 +60,14 @@ namespace PhoneDictionary._Business.Services
             }
         } 
 
-        public Person RemoveContactInfoById(int userId, ContactInfo.InfoTypes infoTypeId)
+        public Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId)
         {
-            throw new NotImplementedException();
+            return _phoneDictionaryRepository.RemoveContactInfoById(personId, infoTypeId);
         }
 
         public Person UpdatePerson(Person person)
         {
-            throw new NotImplementedException();
+            return _phoneDictionaryRepository.UpdatePerson(person);
         }
     }
 }

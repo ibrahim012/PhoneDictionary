@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HSCIW8U90WSrwr29dczNTx4DZ29QmMJufbJtSVLtSliZnMIVm25ekr04WwyjOlupz6RFuMyPNDo3W7PiPzuRPw==",
+  "dgSpecHash": "+5r+GqZh01+KBlWJOiFd46hKSralU66eGy0g30DiyYGlRpjiC2Nvr5zdiNiB0ohHetiSmmaJeHkNvxhacMqO5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary. Business.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

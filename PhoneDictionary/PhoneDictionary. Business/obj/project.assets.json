@@ -3265,9 +3265,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary. Business.csproj",
-      "projectName": "PhoneDictionary. Business",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary. Business.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary.Business.csproj",
+      "projectName": "PhoneDictionary.Business",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary.Business.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\obj\\",
       "projectStyle": "PackageReference",

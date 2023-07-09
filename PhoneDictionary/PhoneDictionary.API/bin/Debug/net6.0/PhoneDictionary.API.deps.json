@@ -9,6 +9,7 @@
       "PhoneDictionary.API/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
+          "PhoneDictionary.Business": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -666,13 +667,13 @@
           }
         }
       },
-      "PhoneDictionary. Business/1.0.0": {
+      "PhoneDictionary.Business/1.0.0": {
         "dependencies": {
           "PhoneDictionary.DataAccess": "1.0.0",
           "PhoneDictionary.Entity": "1.0.0"
         },
         "runtime": {
-          "PhoneDictionary. Business.dll": {}
+          "PhoneDictionary.Business.dll": {}
         }
       },
       "PhoneDictionary.DataAccess/1.0.0": {
@@ -1181,7 +1182,7 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "PhoneDictionary. Business/1.0.0": {
+    "PhoneDictionary.Business/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

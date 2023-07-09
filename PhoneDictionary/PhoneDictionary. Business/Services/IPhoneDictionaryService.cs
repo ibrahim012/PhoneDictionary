@@ -1,4 +1,5 @@
 ﻿using PhoneDictionary.Entity;
+using PhoneDictionary.Entity.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +11,13 @@ namespace PhoneDictionary._Business.Services
 {
     public interface IPhoneDictionaryService
     {
-        Person CreatePerson(Person person);
+        PersonModel CreatePerson(PersonModel person);
         void DeletePerson(int personId);
         Person UpdatePerson(Person person);
         List<Person> GetAllPerson();
 
-        Person AddContactInfo(ContactInfo contactInfo);
-        Person RemoveContactInfoById(int userId, ContactInfo.InfoTypes infoTypeId);
+        Person AddContactInfo(ContactInfo contactInfo,int personId);
+        Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId);
         Person GetPersonById(int personId);
     }
 }

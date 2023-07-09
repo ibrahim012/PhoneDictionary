@@ -1147,7 +1147,7 @@
           }
         }
       },
-      "PhoneDictionary. Business/1.0.0": {
+      "PhoneDictionary.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1155,10 +1155,10 @@
           "PhoneDictionary.Entity": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/PhoneDictionary. Business.dll": {}
+          "bin/placeholder/PhoneDictionary.Business.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PhoneDictionary. Business.dll": {}
+          "bin/placeholder/PhoneDictionary.Business.dll": {}
         }
       },
       "PhoneDictionary.DataAccess/1.0.0": {
@@ -3510,10 +3510,10 @@
         "version.txt"
       ]
     },
-    "PhoneDictionary. Business/1.0.0": {
+    "PhoneDictionary.Business/1.0.0": {
       "type": "project",
-      "path": "../PhoneDictionary. Business/PhoneDictionary. Business.csproj",
-      "msbuildProject": "../PhoneDictionary. Business/PhoneDictionary. Business.csproj"
+      "path": "../PhoneDictionary. Business/PhoneDictionary.Business.csproj",
+      "msbuildProject": "../PhoneDictionary. Business/PhoneDictionary.Business.csproj"
     },
     "PhoneDictionary.DataAccess/1.0.0": {
       "type": "project",
@@ -3529,7 +3529,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Newtonsoft.Json >= 13.0.3",
-      "PhoneDictionary. Business >= 1.0.0",
+      "PhoneDictionary.Business >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3567,8 +3567,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary. Business.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary. Business.csproj"
+            "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary.Business.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary. Business\\PhoneDictionary.Business.csproj"
             }
           }
         }
