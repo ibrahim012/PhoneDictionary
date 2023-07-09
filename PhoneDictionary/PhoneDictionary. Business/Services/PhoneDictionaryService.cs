@@ -35,7 +35,8 @@ namespace PhoneDictionary._Business.Services
 
         public List<Person> GetAllPerson()
         {
-            return _phoneDictionaryRepository.GetAllPerson();
+            var response = _phoneDictionaryRepository.GetAllPerson();
+            return response;
         }
 
         public Person GetPersonById(int personId)

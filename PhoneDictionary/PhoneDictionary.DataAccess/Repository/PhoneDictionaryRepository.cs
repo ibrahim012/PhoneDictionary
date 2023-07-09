@@ -1,6 +1,8 @@
-﻿using PhoneDictionary.Entity;
+﻿using Microsoft.EntityFrameworkCore;
+using PhoneDictionary.Entity;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,10 +48,10 @@ namespace PhoneDictionary.DataAccess.Repository
         {
             using (var dbContext = new PhoneDictionaryDbContext())
             {
-                return dbContext.Person.ToList();
+                var response = dbContext.Person.Include(x => x.ContactInfos).ToList();
+                return response;
             }
         }
-
         public Person GetPersonById(int personId)
         {
             using (var dbContext = new PhoneDictionaryDbContext())
