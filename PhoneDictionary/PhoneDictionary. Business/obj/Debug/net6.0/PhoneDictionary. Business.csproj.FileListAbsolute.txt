@@ -1,0 +1,5 @@
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary. Business\obj\Debug\net6.0\PhoneDictionary. Business.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary. Business\obj\Debug\net6.0\PhoneDictionary. Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary. Business\obj\Debug\net6.0\PhoneDictionary. Business.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary. Business\obj\Debug\net6.0\PhoneDictionary. Business.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary. Business\obj\Debug\net6.0\PhoneDictionary. Business.csproj.CoreCompileInputs.cache
