@@ -1159,10 +1159,6 @@
       "PhoneDictionary.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.8"
-        },
         "compile": {
           "bin/placeholder/PhoneDictionary.Entity.dll": {}
         },

@@ -13,7 +13,7 @@ namespace PhoneDictionary.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Data Source= DESKTOP-E3QB575\\SQLEXPRESS;Initial Catalog=PhoneDictionary;Integrated Security=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Data Source= DESKTOP-VO289U7;Initial Catalog=PhoneDictionary;Integrated Security=True;TrustServerCertificate=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

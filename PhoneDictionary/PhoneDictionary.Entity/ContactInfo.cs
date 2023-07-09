@@ -15,6 +15,7 @@ namespace PhoneDictionary.Entity
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public InfoTypes InfoType { get; set; }
+        [StringLength(100)]
         public string Content { get; set; }
 
         [ForeignKey(nameof(Person))]

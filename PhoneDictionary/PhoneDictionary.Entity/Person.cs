@@ -12,8 +12,11 @@ namespace PhoneDictionary.Entity
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UUID { get; set; }
+        [StringLength(100)]
         public string Name { get; set; }
+        [StringLength(100)]
         public string Surname { get; set; }
+        [StringLength(500)]
         public string CompanyName { get; set; }
 
         public ICollection<ContactInfo> ContactInfos { get; set; }
