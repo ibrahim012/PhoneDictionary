@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PhoneDictionary.Entity;
+using PhoneDictionary.Entity.Mapping;
 using PhoneDictionary.Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -52,20 +53,27 @@ namespace PhoneDictionary.DataAccess.Repository
             }
         }
 
-        public List<Person> GetAllPerson()
+        public List<PersonDetailModel> GetAllPerson()
         {
+            List<Person> person = new List<Person>();
+
             using (var dbContext = new PhoneDictionaryDbContext())
             {
-                var response = dbContext.Person.Include(x => x.ContactInfos).ToList();
-                return response;
+                person = dbContext.Person.Include(x => x.ContactInfos).ToList();
             }
+
+            return new Mapping().PersonToPersonDetailDTOList(person);
         }
-        public Person GetPersonById(int personId)
+        public List<PersonDetailModel> GetPersonById(int personId)
         {
+            List<Person> person = new List<Person>();
             using (var dbContext = new PhoneDictionaryDbContext())
             {
-                return dbContext.Person.Find(personId);
+                person = dbContext.Person.Include(x => x.ContactInfos).Where(x=>x.UUID == personId).ToList();
             }
+
+            return new Mapping().PersonToPersonDetailDTOList(person);
+
         }
 
         public Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId)

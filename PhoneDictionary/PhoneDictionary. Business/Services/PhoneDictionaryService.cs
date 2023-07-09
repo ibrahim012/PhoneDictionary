@@ -42,13 +42,13 @@ namespace PhoneDictionary._Business.Services
             throw new Exception("PersonId 0dan büyük olmalıdır.");
         }
 
-        public List<Person> GetAllPerson()
+        public List<PersonDetailModel> GetAllPerson()
         {
             var response = _phoneDictionaryRepository.GetAllPerson();
             return response;
         }
 
-        public Person GetPersonById(int personId)
+        public List<PersonDetailModel> GetPersonById(int personId)
         {
             if (personId>0)
             {

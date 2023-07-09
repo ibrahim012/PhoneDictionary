@@ -14,10 +14,10 @@ namespace PhoneDictionary.DataAccess.Repository
         PersonModel CreatePerson(PersonModel person);
         void DeletePerson(int personId);
         Person UpdatePerson(Person person);
-        List<Person> GetAllPerson();
+        List<PersonDetailModel> GetAllPerson();
 
         Person AddContactInfo(ContactInfo contactInfo, int personId);
         Person RemoveContactInfoById(int userId, InfoTypes infoTypeId);
-        Person GetPersonById(int personId);
+        List<PersonDetailModel> GetPersonById(int personId);
     }
 }

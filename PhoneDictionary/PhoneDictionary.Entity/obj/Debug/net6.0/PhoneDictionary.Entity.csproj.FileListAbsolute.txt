@@ -1,12 +1,12 @@
-C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.deps.json
-C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.runtimeconfig.json
-C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.dll
-C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.pdb
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.csproj.AssemblyReference.cache
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.AssemblyInfoInputs.cache
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.AssemblyInfo.cs
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.deps.json
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.runtimeconfig.json
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\bin\Debug\net6.0\PhoneDictionary.Entity.pdb
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.dll
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\refint\PhoneDictionary.Entity.dll
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Entity\obj\Debug\net6.0\PhoneDictionary.Entity.pdb

@@ -18,14 +18,14 @@ namespace PhoneDictionary.API.Controllers
         }
           
         [HttpGet("GetAllPerson")]
-        public List<Person> GetAllPerson()
+        public List<PersonDetailModel> GetAllPerson()
         {
             var response = _phoneDictionaryService.GetAllPerson();
             return response;
         }
 
         [HttpGet("GetPersonById")]
-        public Person GetPersonById(int personId)
+        public List<PersonDetailModel> GetPersonById(int personId)
         {
             return _phoneDictionaryService.GetPersonById(personId);
         }

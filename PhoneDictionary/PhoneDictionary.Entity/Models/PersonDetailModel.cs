@@ -8,7 +8,7 @@ namespace PhoneDictionary.Entity.Models
 {
     public  class PersonDetailModel
     {
-        public Person Person { get; set; }
-        public ContactInfoModel ContactInfo { get; set; }
+        public PersonModel Person { get; set; }
+        public List<ContactInfoModel> ContactInfo { get; set; }
     }
 }
