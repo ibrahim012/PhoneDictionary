@@ -16,7 +16,7 @@ namespace PhoneDictionary._Business.Services
         List<Person> GetAllPerson();
 
         Person AddContactInfo(ContactInfo contactInfo);
-        Person RemoveContactInfoById(int userId, InfoTypes infoTypeId);
+        Person RemoveContactInfoById(int userId, ContactInfo.InfoTypes infoTypeId);
         Person GetPersonById(int personId);
     }
 }

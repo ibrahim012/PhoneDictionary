@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PhoneDictionary.DataAccess\PhoneDictionary.DataAccess.csproj" />
     <ProjectReference Include="..\PhoneDictionary.Entity\PhoneDictionary.Entity.csproj" />
   </ItemGroup>
 
