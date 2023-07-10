@@ -13,11 +13,13 @@ namespace PhoneDictionary.DataAccess.Repository
     {
         PersonModel CreatePerson(PersonModel person);
         void DeletePerson(int personId);
-        Person UpdatePerson(Person person);
+        Person UpdatePerson(PersonModel person);
         List<PersonDetailModel> GetAllPerson();
 
-        Person AddContactInfo(ContactInfo contactInfo, int personId);
+        Person AddContactInfo(ContactInfoModel contactInfo, int personId);
         Person RemoveContactInfoById(int userId, InfoTypes infoTypeId);
         List<PersonDetailModel> GetPersonById(int personId);
+        public int GetPersonCountByLocationName(string locationName);
+        public int GetPhoneNumberCountByLocationName(string locationName);
     }
 }

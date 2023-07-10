@@ -9,6 +9,7 @@ namespace PhoneDictionary.Entity.Models
 {
     public class PersonModel : BaseEntity
     {
+        public int UUID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string CompanyName { get; set; }

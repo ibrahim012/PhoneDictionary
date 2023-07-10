@@ -38,10 +38,9 @@ namespace PhoneDictionary.API.Controllers
         }
 
         [HttpPost("UpdatePerson")]
-        public Person Update(Person person)
+        public Person Update(PersonModel person)
         {
-            _phoneDictionaryService.UpdatePerson(person);
-            return person;
+            return _phoneDictionaryService.UpdatePerson(person);
         }
 
         [HttpPost("DeletePerson")]
@@ -51,7 +50,7 @@ namespace PhoneDictionary.API.Controllers
         }
 
         [HttpPost("AddContactInfo")]
-        public Person AddContactInfo(ContactInfo contactInfo, int userId)
+        public Person AddContactInfo(ContactInfoModel contactInfo, int userId)
         {
             return _phoneDictionaryService.AddContactInfo(contactInfo, userId);
         }

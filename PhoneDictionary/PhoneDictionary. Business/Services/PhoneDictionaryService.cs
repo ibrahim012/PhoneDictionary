@@ -19,9 +19,16 @@ namespace PhoneDictionary._Business.Services
             _phoneDictionaryRepository = new PhoneDictionaryRepository();
         }
 
-        public Person AddContactInfo(ContactInfo contactInfo, int personId)
+        public Person AddContactInfo(ContactInfoModel contactInfo, int personId)
         {
-            return _phoneDictionaryRepository.AddContactInfo(contactInfo, personId);
+            if (personId>0)
+            {
+                return _phoneDictionaryRepository.AddContactInfo(contactInfo, personId);
+            }
+            else
+            {
+                throw new Exception("PersonId 0dan küçük olamaz");
+            }
         }
 
         public PersonModel CreatePerson(PersonModel person)
@@ -39,7 +46,10 @@ namespace PhoneDictionary._Business.Services
             {
                 _phoneDictionaryRepository.DeletePerson(personId);
             }
-            throw new Exception("PersonId 0dan büyük olmalıdır.");
+            else
+            {
+                throw new Exception("PersonId 0dan büyük olmalıdır.");
+            }
         }
 
         public List<PersonDetailModel> GetAllPerson()
@@ -58,14 +68,32 @@ namespace PhoneDictionary._Business.Services
             {
                 throw new Exception("PersonID 0'dan küçük olamaz");
             }
-        } 
+        }
+
+        public int GetPersonCountByLocationName(string locationName)
+        {
+            if (!string.IsNullOrEmpty(locationName))
+            {
+                return _phoneDictionaryRepository.GetPersonCountByLocationName(locationName);
+            }
+            throw new Exception("Lokasyon bilgisi boş olamaz");
+        }
+
+        public int GetPhoneNumberCountByLocationName(string locationName)
+        {
+            if (!string.IsNullOrEmpty(locationName))
+            {
+                return _phoneDictionaryRepository.GetPhoneNumberCountByLocationName(locationName);
+            }
+            throw new Exception("Lokasyon bilgisi boş olamaz");
+        }
 
         public Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId)
         {
             return _phoneDictionaryRepository.RemoveContactInfoById(personId, infoTypeId);
         }
 
-        public Person UpdatePerson(Person person)
+        public Person UpdatePerson(PersonModel person)
         {
             return _phoneDictionaryRepository.UpdatePerson(person);
         }

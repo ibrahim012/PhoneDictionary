@@ -13,11 +13,13 @@ namespace PhoneDictionary._Business.Services
     {
         PersonModel CreatePerson(PersonModel person);
         void DeletePerson(int personId);
-        Person UpdatePerson(Person person);
+        Person UpdatePerson(PersonModel person);
         List<PersonDetailModel> GetAllPerson();
 
-        Person AddContactInfo(ContactInfo contactInfo,int personId);
+        Person AddContactInfo(ContactInfoModel contactInfo, int personId);
         Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId);
         List<PersonDetailModel> GetPersonById(int personId);
+        public int GetPersonCountByLocationName(string locationName);
+        public int GetPhoneNumberCountByLocationName(string locationName);
     }
 }
