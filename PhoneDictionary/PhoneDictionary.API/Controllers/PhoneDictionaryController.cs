@@ -17,6 +17,10 @@ namespace PhoneDictionary.API.Controllers
             _phoneDictionaryService = new PhoneDictionaryService();
         }
           
+        /// <summary>
+        /// tüm kişileri listeler
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetAllPerson")]
         public List<PersonDetailModel> GetAllPerson()
         {
@@ -24,12 +28,22 @@ namespace PhoneDictionary.API.Controllers
             return response;
         }
 
+        /// <summary>
+        /// Idsi verilen kişiye listeler
+        /// </summary>
+        /// <param name="personId"></param>
+        /// <returns></returns>
         [HttpGet("GetPersonById")]
         public List<PersonDetailModel> GetPersonById(int personId)
         {
             return _phoneDictionaryService.GetPersonById(personId);
         }
 
+        /// <summary>
+        /// yeni kişi oluşturur
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns></returns>
         [HttpPost("CreatePerson")]
         public PersonModel Create(PersonModel person)
         {
@@ -37,23 +51,39 @@ namespace PhoneDictionary.API.Controllers
             return person;
         }
 
+        /// <summary>
+        /// idsi verilen kişiyi günceller
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns></returns>
         [HttpPost("UpdatePerson")]
         public Person Update(PersonModel person)
         {
             return _phoneDictionaryService.UpdatePerson(person);
         }
 
+        /// <summary>
+        /// idsi verilen kişiyi siler
+        /// </summary>
+        /// <param name="personId"></param>
         [HttpPost("DeletePerson")]
         public void Delete(int personId)
         {
             _phoneDictionaryService.DeletePerson(personId);
         }
 
+        /// <summary>
+        /// kişiye yeni iletişim bilgisi ekler
+        /// </summary>
+        /// <param name="contactInfo"></param>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpPost("AddContactInfo")]
         public Person AddContactInfo(ContactInfoModel contactInfo, int userId)
         {
             return _phoneDictionaryService.AddContactInfo(contactInfo, userId);
         }
+        //idsi verilen kişiden iletişim tipi verilen iletişim bilgisini kaldırır
 
         [HttpPost("RemoveContactInfoById")]
         public Person RemoveContactInfoById(int personId,ContactInfo.InfoTypes infoTypeId)
