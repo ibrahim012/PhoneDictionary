@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "P2KbBeahT1+FLJY/7/KwSRhaYpVvgaWIrW2W2dFl6lawWUk6G7uDArIecusxEF6SC+1+Zi8FVUE1OISrhVcTzA==",
+  "dgSpecHash": "XczUUl8oAxFV3g2OzagFMgyUO6zjDT31dOHJ5AD0s2vBMCJWy/nxHNzFGxscHlwQuzIfLVEnqLBGZPtyCLi7aA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\Desktop\\PhoneDictionary\\PhoneDictionary\\PhoneDictionary.API\\PhoneDictionary.API.csproj",
   "expectedPackageFiles": [
@@ -73,10 +73,10 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }
