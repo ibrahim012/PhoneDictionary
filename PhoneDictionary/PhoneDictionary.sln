@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Entity", "PhoneDictionary.Entity\PhoneDictionary.Entity.csproj", "{1323F88E-A087-4FFE-B6FD-A3E87D985991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.Entity", "PhoneDictionary.Entity\PhoneDictionary.Entity.csproj", "{1323F88E-A087-4FFE-B6FD-A3E87D985991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.DataAccess", "PhoneDictionary.DataAccess\PhoneDictionary.DataAccess.csproj", "{10ED8270-2C28-4F48-9791-7B98219692C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.DataAccess", "PhoneDictionary.DataAccess\PhoneDictionary.DataAccess.csproj", "{10ED8270-2C28-4F48-9791-7B98219692C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Business", "PhoneDictionary. Business\PhoneDictionary.Business.csproj", "{C14FB944-C7DE-424A-ABFE-F8A4E102ED46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.Business", "PhoneDictionary. Business\PhoneDictionary.Business.csproj", "{C14FB944-C7DE-424A-ABFE-F8A4E102ED46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.API", "PhoneDictionary.API\PhoneDictionary.API.csproj", "{EBC59368-1C6A-4A69-898F-7A93650A493A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.API", "PhoneDictionary.API\PhoneDictionary.API.csproj", "{EBC59368-1C6A-4A69-898F-7A93650A493A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Test", "PhoneDictionary.Test\PhoneDictionary.Test.csproj", "{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EBC59368-1C6A-4A69-898F-7A93650A493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBC59368-1C6A-4A69-898F-7A93650A493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC59368-1C6A-4A69-898F-7A93650A493A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
