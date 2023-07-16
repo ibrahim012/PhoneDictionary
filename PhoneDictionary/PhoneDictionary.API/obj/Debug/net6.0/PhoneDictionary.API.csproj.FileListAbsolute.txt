@@ -84,3 +84,7 @@ C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\obj\De
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\obj\Debug\net6.0\PhoneDictionary.API.pdb
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\obj\Debug\net6.0\PhoneDictionary.API.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\obj\Debug\net6.0\ref\PhoneDictionary.API.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\PhoneDictionary.RabbitMQService.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\PhoneDictionary.RabbitMQService.pdb

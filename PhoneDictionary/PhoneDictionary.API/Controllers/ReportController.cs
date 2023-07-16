@@ -23,9 +23,14 @@ namespace PhoneDictionary.API.Controllers
         }
 
         [HttpGet("GetPhoneNumberCountByLocationName")]
-        public int GetPhoneNumberCountByLocationName(string locationName)
+        public string GetPhoneNumberCountByLocationName(string locationName)
         {
-            return _phoneDictionaryService.GetPhoneNumberCountByLocationName(locationName);
+            if (string.IsNullOrEmpty(locationName))
+            {
+                return "Rapor oluşturmak için lütfen lokasyon bilgisi giriniz!";
+            }
+            RabbitMQPublisher.Publisher("GetPhoneNumberCountByLocationNameReport", locationName);
+            return "OK";
         }
 
         

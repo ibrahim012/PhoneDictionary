@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.Business", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.API", "PhoneDictionary.API\PhoneDictionary.API.csproj", "{EBC59368-1C6A-4A69-898F-7A93650A493A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Test", "PhoneDictionary.Test\PhoneDictionary.Test.csproj", "{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDictionary.Test", "PhoneDictionary.Test\PhoneDictionary.Test.csproj", "{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Consumer", "PhoneDictionary.Consumer\PhoneDictionary.Consumer.csproj", "{12E783F5-4E31-417E-BF58-FBDE7E7E284E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.RabbitMQService", "PhoneDictionary.RabbitMQService\PhoneDictionary.RabbitMQService.csproj", "{9F390438-E41F-43C3-AB39-97E467058E27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F8F9BB3-04A7-4983-ABF4-CA3172AAB7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E783F5-4E31-417E-BF58-FBDE7E7E284E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E783F5-4E31-417E-BF58-FBDE7E7E284E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E783F5-4E31-417E-BF58-FBDE7E7E284E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E783F5-4E31-417E-BF58-FBDE7E7E284E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F390438-E41F-43C3-AB39-97E467058E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F390438-E41F-43C3-AB39-97E467058E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F390438-E41F-43C3-AB39-97E467058E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F390438-E41F-43C3-AB39-97E467058E27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
