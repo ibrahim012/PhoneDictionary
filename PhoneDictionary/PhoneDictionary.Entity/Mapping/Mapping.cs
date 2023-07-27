@@ -24,7 +24,9 @@ namespace PhoneDictionary.Entity.Mapping
                     Surname = item.Surname,
                     CreatedDate = item.CreatedDate,
                     IsActive = item.IsActive,
-                    UpdatedDate = item.UpdatedDate
+                    UpdatedDate = item.UpdatedDate,
+                    UUID = item.UUID
+                    
                 };
                 personDetailModel.Person = p;
 

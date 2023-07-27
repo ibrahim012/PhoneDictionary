@@ -21,5 +21,9 @@ namespace PhoneDictionary.DataAccess.Repository
         List<PersonDetailModel> GetPersonById(int personId);
         public int GetPersonCountByLocationName(string locationName);
         public int GetPhoneNumberCountByLocationName(string locationName);
+
+        Person RemoveAllContactInfoById(int userId);
+
+        
     }
 }

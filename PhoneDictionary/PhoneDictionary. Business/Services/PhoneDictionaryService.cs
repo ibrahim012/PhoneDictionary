@@ -88,6 +88,11 @@ namespace PhoneDictionary._Business.Services
             throw new Exception("Lokasyon bilgisi boş olamaz");
         }
 
+        public Person RemoveAllContactInfoById(int personId)
+        {
+            return _phoneDictionaryRepository.RemoveAllContactInfoById(personId);
+        }
+
         public Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId)
         {
             return _phoneDictionaryRepository.RemoveContactInfoById(personId, infoTypeId);

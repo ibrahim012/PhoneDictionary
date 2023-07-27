@@ -88,3 +88,7 @@ C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\De
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\System.Threading.Channels.dll
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\PhoneDictionary.RabbitMQService.dll
 C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\PhoneDictionary.RabbitMQService.pdb
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\RestSharp.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

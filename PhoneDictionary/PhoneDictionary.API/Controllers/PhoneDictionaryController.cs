@@ -1,8 +1,25 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using PhoneDictionary._Business.Services;
 using PhoneDictionary.Entity;
+using PhoneDictionary.Entity.APIModel;
 using PhoneDictionary.Entity.Models;
+using RabbitMQ.Client;
+using RestSharp;
+using RestSharp.Authenticators;
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Reflection.PortableExecutable;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace PhoneDictionary.API.Controllers
 {
@@ -16,7 +33,7 @@ namespace PhoneDictionary.API.Controllers
         {
             _phoneDictionaryService = new PhoneDictionaryService();
         }
-          
+
         /// <summary>
         /// tüm kişileri listeler
         /// </summary>
@@ -67,9 +84,33 @@ namespace PhoneDictionary.API.Controllers
         /// </summary>
         /// <param name="personId"></param>
         [HttpPost("DeletePerson")]
-        public void Delete(int personId)
+        public async Task<string> Delete(int personId)
         {
-            _phoneDictionaryService.DeletePerson(personId);
+            var baseUrl = "https://localhost:7288/";
+            var urlWithMethod = "api/ContactInfo/DeleteContactInfoByPersonId";
+
+            var client = new HttpClient();
+            client.BaseAddress = new Uri(baseUrl);
+            var person = new DeletePersonRequestModel
+            {
+                PersonId = personId
+            };
+            var json = System.Text.Json.JsonSerializer.Serialize(person);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = client.PostAsync(urlWithMethod, content).Result;
+
+            string result = response.Content.ReadAsStringAsync().Result;
+            var resp = JsonConvert.DeserializeObject<Person>(result);
+            if (response.StatusCode != HttpStatusCode.OK)
+            {
+                return "İşlem yapılırken bir hata oluştu";
+            }
+            else if (resp.UUID == 0)
+            {
+                return "Kayıt silinirken bir hata oluştu."+personId+" ye ait bir Kişi bulunamamıştır.";
+            }
+            _phoneDictionaryService.DeletePerson(resp.UUID);
+            return "Kayıt başarıyla silinmiştir.";
         }
 
         /// <summary>
@@ -86,9 +127,10 @@ namespace PhoneDictionary.API.Controllers
         //idsi verilen kişiden iletişim tipi verilen iletişim bilgisini kaldırır
 
         [HttpPost("RemoveContactInfoById")]
-        public Person RemoveContactInfoById(int personId,ContactInfo.InfoTypes infoTypeId)
+        public Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId)
         {
             return _phoneDictionaryService.RemoveContactInfoById(personId, infoTypeId);
         }
-      }
+    }
+    
 }

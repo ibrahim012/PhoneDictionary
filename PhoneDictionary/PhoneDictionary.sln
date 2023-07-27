@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.Consumer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.RabbitMQService", "PhoneDictionary.RabbitMQService\PhoneDictionary.RabbitMQService.csproj", "{9F390438-E41F-43C3-AB39-97E467058E27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDictionary.ContactInfoAPI", "PhoneDictionary.ContactInfoAPI\PhoneDictionary.ContactInfoAPI.csproj", "{1C8DAE51-7573-402D-AF9C-76B6478B65C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9F390438-E41F-43C3-AB39-97E467058E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F390438-E41F-43C3-AB39-97E467058E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F390438-E41F-43C3-AB39-97E467058E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8DAE51-7573-402D-AF9C-76B6478B65C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8DAE51-7573-402D-AF9C-76B6478B65C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8DAE51-7573-402D-AF9C-76B6478B65C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8DAE51-7573-402D-AF9C-76B6478B65C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
