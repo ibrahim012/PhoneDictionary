@@ -7,14 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PhoneDictionary. Business\PhoneDictionary.Business.csproj" />
-    <ProjectReference Include="..\PhoneDictionary.RabbitMQService\PhoneDictionary.RabbitMQService.csproj" />
   </ItemGroup>
 
 </Project>

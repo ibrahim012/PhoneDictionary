@@ -110,6 +110,29 @@ namespace PhoneDictionary.DataAccess.Repository
             }
         }
 
+        public Person RemoveAllContactInfoById(int userId)
+        {
+            var person = new Person();
+            using (var dbContext = new PhoneDictionaryDbContext())
+            {
+                var contactInfos = dbContext.Contacts.Where(x=>x.PersonUUID == userId).ToList();
+
+                if (contactInfos == null || contactInfos.Count==0)
+                {
+                    return person;
+                }
+                foreach (var contact in contactInfos)
+                {
+                    contact.IsActive = false;
+                    contact.UpdatedDate = DateTime.Now;
+                    dbContext.Contacts.Update(contact);
+                    dbContext.SaveChanges();
+
+                }
+                return dbContext.Person.Find(userId);
+            }
+        }
+
         public Person RemoveContactInfoById(int personId, ContactInfo.InfoTypes infoTypeId)
         {
             using (var dbContext = new PhoneDictionaryDbContext())
