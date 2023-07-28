@@ -23,7 +23,9 @@ namespace PhoneDictionary.DataAccess.Repository
         public int GetPhoneNumberCountByLocationName(string locationName);
 
         Person RemoveAllContactInfoById(int userId);
+        public string AddReport(RabbitMQReportModel model);
 
-        
+
+
     }
 }

@@ -31,6 +31,17 @@ namespace PhoneDictionary._Business.Services
             }
         }
 
+        public string AddReport(RabbitMQReportModel model)
+        {
+            if (model.Result == 0)
+            {
+                return "Rapor kayıt edilirken bir hata oluştu";
+            }
+
+            var resp = _phoneDictionaryRepository.AddReport(model);
+            return resp == "OK" ? "Rapor DBye başarıyla kayıt edilmiştir." : "Rapor kayıt edilirken bir hata oluştu";
+        }
+
         public PersonModel CreatePerson(PersonModel person)
         {
             if (person != null)
