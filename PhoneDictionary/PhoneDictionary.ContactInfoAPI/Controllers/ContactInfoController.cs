@@ -49,7 +49,7 @@ namespace PhoneDictionary.ContactInfoAPI.Controllers
         }
 
         [HttpPost("GetPersonCountByLocationName")]
-        public int GetPersonCountByLocationName([FromBody] ReportRequestModel model)
+        public string GetPersonCountByLocationName([FromBody] ReportRequestModel model)
         {
             var resp = _phoneDictionaryService.GetPersonCountByLocationName(model.LocationName);
             //rapor oluştuktan sonra rbmq ya mesajı publish yapacak
@@ -60,7 +60,7 @@ namespace PhoneDictionary.ContactInfoAPI.Controllers
                 ReportType = Report.ReportTypes.NumberOfPeopleInTheLocation
             };
             RabbitMQPublisher.Publisher(rbmqModel);
-            return 1;
+            return "OK";
         }
     } 
 }

@@ -23,6 +23,6 @@ namespace PhoneDictionary._Business.Services
         public int GetPhoneNumberCountByLocationName(string locationName);
 
         Person RemoveAllContactInfoById(int personId);
-        string AddReport(RabbitMQReportModel model);
+        string AddReport(List<RabbitMQReportModel> model);
     }
 }

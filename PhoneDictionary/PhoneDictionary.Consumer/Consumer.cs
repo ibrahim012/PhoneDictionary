@@ -1,4 +1,5 @@
-﻿using PhoneDictionary._Business.Services;
+﻿using Newtonsoft.Json;
+using PhoneDictionary._Business.Services;
 using PhoneDictionary.Entity.Models;
 using PhoneDictionary.RabbitMQService;
 using RabbitMQ.Client;
@@ -23,6 +24,7 @@ namespace PhoneDictionary.Consumer
         public void Consume()
         { 
             var message = "";
+            List<RabbitMQReportModel> reportModels = new List<RabbitMQReportModel>();
             RabbitMQReportModel respModel = new RabbitMQReportModel();
             RabbitMQClient _rabbitMQService = new RabbitMQClient();
              
@@ -37,16 +39,17 @@ namespace PhoneDictionary.Consumer
                         var body = ea.Body.ToArray();
                         message = Encoding.UTF8.GetString(body);
                         respModel = Newtonsoft.Json.JsonConvert.DeserializeObject<RabbitMQReportModel>(message);
-                        
+                        reportModels.Add(respModel);
+
                         //buraya queuedan okuduğu dataları alıp, yeni bir tane servis oluşturulacak
                         //oluşturulan servise queuedaki mesaj parametre olarak verilecek
                         //servis verilen parametredeki değerleri dbdeki report tabloya insert edecek.
                     };
 
-                    channel.BasicConsume(rabbitMQReportQueueName, false, consumer);
+                    channel.BasicConsume(rabbitMQReportQueueName, true, consumer);
                     Thread.Sleep(5000);
                 }
-                var r = _phoneDictionaryService.AddReport(respModel);
+                var r = _phoneDictionaryService.AddReport(reportModels);
             }
             
         }

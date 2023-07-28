@@ -44,8 +44,7 @@ namespace PhoneDictionary.API.Controllers
                 var response = client.PostAsync(urlWithMethod, content).Result;
 
                 string result = response.Content.ReadAsStringAsync().Result;
-                var resp = JsonConvert.DeserializeObject<int>(result);
-                return "İşlem başarılı. Raporu DBde kontrol edebilirsiniz";
+                return "İşlem başarılı. Rapor queueya gönderilmiştir.";
 
             }
             catch (Exception ex)
@@ -77,8 +76,8 @@ namespace PhoneDictionary.API.Controllers
                 var response = client.PostAsync(urlWithMethod, content).Result;
 
                 string result = response.Content.ReadAsStringAsync().Result;
-                var resp = JsonConvert.DeserializeObject<int>(result);
-                return "İşlem başarılı. Raporu DBde kontrol edebilirsiniz";
+
+                return "İşlem başarılı. Rapor queueya gönderilmiştir.";
 
             }
             catch (Exception ex)
