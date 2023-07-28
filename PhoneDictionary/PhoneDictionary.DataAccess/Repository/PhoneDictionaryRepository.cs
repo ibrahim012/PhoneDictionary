@@ -30,6 +30,34 @@ namespace PhoneDictionary.DataAccess.Repository
             }
         }
 
+        public string AddReport(List<RabbitMQReportModel> model)
+        {
+            try
+            {
+                using (var dbContext = new PhoneDictionaryDbContext())
+                {
+                    foreach (var item in model)
+                    {
+                        var report = new Report()
+                        {
+                            Content = item.Result.ToString(),
+                            CreatedDate = DateTime.Now,
+                            ReportParameterValue = item.ParameterValue,
+                            IsActive = true,
+                            InfoType = item.ReportType
+                        };
+                        dbContext.Report.Add(report);
+                    }
+                    dbContext.SaveChanges();
+                    return "OK";
+                }
+            }
+            catch (Exception)
+            {
+                return "Hata";
+            }
+        }
+
         public PersonModel CreatePerson(PersonModel person)
         {
             using (var dbContext = new PhoneDictionaryDbContext())

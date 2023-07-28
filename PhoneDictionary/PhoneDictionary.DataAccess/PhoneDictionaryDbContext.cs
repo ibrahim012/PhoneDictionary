@@ -25,5 +25,6 @@ namespace PhoneDictionary.DataAccess
 
         public DbSet<Person> Person { get; set; }
         public DbSet<ContactInfo> Contacts{ get; set; }
+        public DbSet<Report> Report { get; set; }
     }
 }

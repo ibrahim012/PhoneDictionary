@@ -1,4 +1,6 @@
-﻿using PhoneDictionary._Business.Services;
+﻿using Newtonsoft.Json;
+using PhoneDictionary._Business.Services;
+using PhoneDictionary.Entity.Models;
 using PhoneDictionary.RabbitMQService;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -6,18 +8,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace PhoneDictionary.Consumer
 {
-    public static class Consumer
+    public class Consumer
     {
-        public static void Consume()
+        private IPhoneDictionaryService _phoneDictionaryService;
+        public Consumer()
         {
+            _phoneDictionaryService = new PhoneDictionaryService();
+        }
+        private readonly string rabbitMQReportQueueName = "ReportQueue";
+        public void Consume()
+        { 
+            var message = "";
+            List<RabbitMQReportModel> reportModels = new List<RabbitMQReportModel>();
+            RabbitMQReportModel respModel = new RabbitMQReportModel();
             RabbitMQClient _rabbitMQService = new RabbitMQClient();
-            string filePath = @"C:\Users\ASUS\Desktop\PhoneDictionary\PhoneDictionary\PhoneDictionary.Consumer\Reports\\";
-            string reportName = "GetPhoneNumberCountByLocationName";
-
+             
             using (var connection = _rabbitMQService.GetRabbitMQConnection())
             {
                 using (var channel = connection.CreateModel())
@@ -27,19 +37,21 @@ namespace PhoneDictionary.Consumer
                     consumer.Received += (model, ea) =>
                     {
                         var body = ea.Body.ToArray();
-                        var message = Encoding.UTF8.GetString(body);
+                        message = Encoding.UTF8.GetString(body);
+                        respModel = Newtonsoft.Json.JsonConvert.DeserializeObject<RabbitMQReportModel>(message);
+                        reportModels.Add(respModel);
 
-                        var res = new PhoneDictionaryService().GetPhoneNumberCountByLocationName(message);
-                        string fileName = reportName+"_"+DateTime.Now.ToString("yyyyMMddHHmm")+".txt";
-                        string fullPath = filePath + fileName;
-
-                        File.WriteAllText(fullPath, res.ToString());
+                        //buraya queuedan okuduğu dataları alıp, yeni bir tane servis oluşturulacak
+                        //oluşturulan servise queuedaki mesaj parametre olarak verilecek
+                        //servis verilen parametredeki değerleri dbdeki report tabloya insert edecek.
                     };
 
-                    channel.BasicConsume("GetPhoneNumberCountByLocationNameReport", false, consumer);
-                    Console.ReadLine();
+                    channel.BasicConsume(rabbitMQReportQueueName, true, consumer);
+                    Thread.Sleep(5000);
                 }
+                var r = _phoneDictionaryService.AddReport(reportModels);
             }
+            
         }
     }
 }

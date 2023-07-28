@@ -10,6 +10,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Consumer.Consume();
+        new Consumer().Consume();
     }
 }
